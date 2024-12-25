@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Business Website</title>
+    <style>
+        /* Global styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header img {
+            width: 150px;
+        }
+
+        nav {
+            display: flex;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #f1f1f1;
+        }
+
+        .content {
+            padding: 50px;
+            text-align: center;
+            color: white;
+        }
+
+        .background-home {
+            background-image: url('https://via.placeholder.com/1600x900?text=Home+Background');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+        }
+
+        .background-services {
+            background-image: url('https://via.placeholder.com/1600x900?text=Services+Background');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+        }
+
+        .background-products {
+            background-image: url('https://via.placeholder.com/1600x900?text=Products+Background');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+        }
+
+        .background-contact {
+            background-image: url('https://via.placeholder.com/1600x900?text=Contact+Background');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+        }
+
+        .background-about {
+            background-image: url('https://via.placeholder.com/1600x900?text=About+Us+Background');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="https://via.placeholder.com/150x50?text=Logo" alt="Logo">
+        <nav>
+            <a href="#home" id="home-link">Home</a>
+            <a href="#services" id="services-link">Services</a>
+            <a href="#products" id="products-link">Products</a>
+            <a href="#contact" id="contact-link">Contact Us</a>
+            <a href="#about" id="about-link">About Us</a>
+        </nav>
+    </header>
+
+    <div id="home" class="content background-home">
+        <h1>Welcome to Our Website</h1>
+        <p>Your business success starts here!</p>
+    </div>
+
+    <div id="services" class="content background-services">
+        <h1>Our Services</h1>
+        <p>Explore the wide range of services we offer.</p>
+    </div>
+
+    <div id="products" class="content background-products">
+        <h1>Our Products</h1>
+        <p>Browse through our quality products designed to meet your needs.</p>
+    </div>
+
+    <div id="contact" class="content background-contact">
+        <h1>Contact Us</h1>
+        <p>Get in touch with us for inquiries or support.</p>
+    </div>
+
+    <div id="about" class="content background-about">
+        <h1>About Us</h1>
+        <p>Learn more about our company, mission, and values.</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Business Website. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Scroll to respective sections on menu click
+        document.getElementById('home-link').addEventListener('click', function () {
+            window.scrollTo({ top: document.getElementById('home').offsetTop, behavior: 'smooth' });
+        });
+        document.getElementById('services-link').addEventListener('click', function () {
+            window.scrollTo({ top: document.getElementById('services').offsetTop, behavior: 'smooth' });
+        });
+        document.getElementById('products-link').addEventListener('click', function () {
+            window.scrollTo({ top: document.getElementById('products').offsetTop, behavior: 'smooth' });
+        });
+        document.getElementById('contact-link').addEventListener('click', function () {
+            window.scrollTo({ top: document.getElementById('contact').offsetTop, behavior: 'smooth' });
+        });
+        document.getElementById('about-link').addEventListener('click', function () {
+            window.scrollTo({ top: document.getElementById('about').offsetTop, behavior: 'smooth' });
+        });
+    </script>
+
+</body>
+
+</html>
